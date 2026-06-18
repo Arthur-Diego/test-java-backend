@@ -1,10 +1,13 @@
 package com.taller.charges;
 
+import java.math.BigDecimal;
+import java.time.Instant;
+
 public record Charge(
         String id,
-        double amount,
+        BigDecimal amount,
         String currency,
         String customerEmail,
         String status,
-        String createdAt
+        Instant createdAt
 ) {}
